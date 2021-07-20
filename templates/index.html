@@ -1,0 +1,260 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Covenant University Chaplaincy Library </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:500i&amp;display=swap">
+    <!-- Owl Carousel-->
+    <link rel="stylesheet" href= "{% static 'vendor/owl.carousel2/assets/owl.carousel.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'vendor/owl.carousel2/assets/owl.theme.default.min.css' %}">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/style.default.css' %}" id="theme-stylesheet'">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %} ">
+
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- NAV BARR-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100">
+        <div class="container"><a class="navbar-brand d-block d-lg-none" href="#"><img src="{% static 'img/logo-alt.svg'%}" alt="... width="60"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home </a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+
+            </ul>
+            <ul class="navbar-nav d-none d-lg-block px-4">
+              <li class="nav-item m-0"><a class="navbar-brand m-0" href="#"><img src="{% static 'img/culogo.svg' %}" alt="..." width="80"></a></li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="#sermons">Upcoming events</a></li>
+
+              
+              <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Log in</a></li>
+
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="text-center pt-5 pt-lg-0 hero-home" id="home">
+      <div class="owl-carousel owl-theme hero-slider owl-nav-custom">
+        <div class="hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url({% static 'img/hero-bg-2.jpg' %})">
+          <div class="container text-white py-5 my-5 index-forward">
+            <h1 class="text-uppercase text-xl">Welcome to chaplaincy library</h1>
+            <div class="row">
+              <div class="col-lg-7 mx-auto">
+                <p class="lead">The secrets of great men are in their stories...</p><a class="btn btn-primary px-4" href="{% url 'text' %}">Proceed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url({% static 'img/hero-bg-3.jpg' %})">
+          <div class="container text-white py-5 my-5 index-forward">
+            <h1 class="text-uppercase text-xl">Way to god</h1>
+            <div class="row">
+              <div class="col-lg-7 mx-auto">
+                <p class="lead">Find God , build your spiritual life and be enpowered by His grace</p><a class="btn btn-primary px-4" href="{% url 'text' %}">Proceed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url({% static 'img/hero-bg-1.jpg' %})">
+          <div class="container text-white py-5 my-5 index-forward">
+            <h1 class="text-uppercase text-xl">God is love</h1>
+            <div class="row">
+              <div class="col-lg-7 mx-auto">
+                <p class="lead"> Understand God's love for you.</p><a class="btn btn-primary px-4" href="{% url 'text' %}">Proceed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section-->
+    <section id="features">
+      <div class="container-fluid p-0">
+        <div class="row p-0 text-center align-items-stretch">
+          <div class="col-lg-3 col-md-6 p-0">
+            <div class="p-5 bg-primary text-white h-100">
+              <h3 class="h4">Our Community</h3>
+              <p class="mb-0 text-small">Fully invested in the spiritual growth of all studensts</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-0">
+            <div class="p-5 bg-primary-shade text-white h-100">
+              <h3 class="h4">Church Mission</h3>
+              <p class="mb-0 text-small">To bring forth young men and women endowed with the spirit of the lord.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-0 order-md-4 order-lg-3">
+            <div class="p-5 bg-primary text-white h-100">
+              <h3 class="h4">Join a Group</h3>
+              <p class="mb-0 text-small">Join the various service units available and begin to work in faith</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-0 order-md-3 order-lg-4">
+            <div class="p-5 bg-primary-shade text-white h-100">
+              <h3 class="h4">Church Beliefs</h3>
+              <p class="mb-0 text-small">Through God all things are possible</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="py-5" id="services">
+      <div class="container py-5">
+        <header class="mb-4 text-center mb-5">
+          <h2 class="text-uppercase">Our services </h2>
+        </header>
+        <div class="row text-center">
+          <div class="col-lg-4 mb-4 mb-lg-0"><i class="fas fa-church text-primary mb-4 fa-3x"></i>
+            <h3 class="h5">Chapel services</h3>
+            <p class="text-muted"><b>Tuesday: 100-200 LEVEL~ 8-10AM </b><br>
+                                  <b>Thursday: 300-500 LEVEL~ 8-10AM </b><br>
+             </p>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0"><i class="fas fa-bible text-primary mb-4 fa-3x"></i>
+            <h3 class="h5">Chaplaincy meetings</h3>
+            <p class="text-muted"><b> Every Saturday ~ 6:30-8:00<br>
+                                   FFF: Saturdays ~ 5:00-6:00</b> </p>
+          </div>
+          <div class="col-lg-4"><i class="fas fa-praying-hands text-primary mb-4 fa-3x"></i>
+            <h3 class="h5">Covenant Hour Of Prayer (CHOP) </h3>
+            <p class="text-muted"><b>100 LEVEL: MONDAYS ~ 5:30-6:30AM </b> <br>
+                                 <b> 200 LEVEL: WEDNESDAYS ~ 5:30-6:30AM</b> <br>
+                                 <b> 300 LEVEL: WEDNESDAYS ~ 5:30-6:30AM</b>  <br>
+                                 <b> 400 LEVEL: THURSDAYS ~ 5:30-6:30AM </b> <br>
+                                 <b> 500 LEVEL: FRIDAYS ~ 5:30-6:30AM </b> <br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sermons Section -->
+    <section class="py-5" id="sermons">
+      <div class="container py-5"><header class="mb-4 text-center mb-5">
+          <h2 class="text-uppercase">Upcoming Events</h2>
+        </header>
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0"><a class="primary-overlay d-block mb-3" href="text.html">
+              <div class="overlay-content"><img class="img-fluid w-100" src="{% static 'img/reflec.jpg' %}" alt=".." ></div></a>
+            <h4 class="mb-0"> <a class="reset-anchor" href="text.html">CAN U </a></h4>
+            <p class="text-serif text-primary text-small">Reflection Unit</p>
+            <p class="text-muted">Spirit filled dance presentations by the wonderful dancers of covenant university reflection unit</p>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0"><a class="primary-overlay d-block mb-3" href="text.html">
+              <div class="overlay-content"><img class="img-fluid w-100" src="{% static 'img/cutg.jpg' %}" alt=".." ></div></a>
+            <h4 class="mb-0"> <a class="reset-anchor" href="text.html">DRAMA NIGHT</a></h4>
+            <p class="text-serif text-primary text-small">C.U.T.G</p>
+            <p class="text-muted">Variety of beautifully crafted stories presented by the covenant university theatre group.</p>
+          </div>
+          <div class="col-lg-4"><a class="primary-overlay d-block mb-3" href="text.html">
+              <div class="overlay-content"><img class="img-fluid w-100" src="{% static 'img/jamboree.jpg' %}" alt="..." ></div></a>
+            <h4 class="mb-0"> <a class="reset-anchor" href="text.html">JAMBOREE</a></h4>
+            <p class="text-serif text-primary text-small">Chaplaincy</p>
+            <p class="text-muted">Celebration of life and thanksgiving</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class="py-5" id="contact">
+      <div class="container py-5">
+        <header class="mb-4 mb-5 text-center">
+          <p class="text-serif mb-0 text-primary">Where to find us</p>
+          <h2 class="text-uppercase">Reach us</h2>
+          <div class="row">
+            <div class="col-lg-7 mx-auto">
+              <p class="text-muted">University Chapel ~ Student Chaplaincy Office.</p>
+            </div>
+          </div>
+        </header>
+        <div class="row align-items-stretch">
+          <div class="col-lg-6 pr-lg-0">           
+            <div class="contact-img bg-center bg-cover" style="background: url({% static 'img/CUchapel.jpg' %})"></div>
+          </div>
+          <div class="col-lg-6 pl-lg-0">
+            <div class="bg-light p-5 h-100">
+              <h4>Covenant University Chaplaincy Library </h4>
+              <ul class="list-unstyled mb-0 text-muted">
+                <li class="mb-2"><a class="reset-anchor" href="tel:+07035478968"> <i class="fas fa-phone text-primary mr-3"></i><span>0703 5478 968</span></a></li>
+                <li class="mb-2"><a class="reset-anchor" href="text.html"> <i class="fas fa-globe-americas text-primary mr-3"></i><span>Covenant University, Ota, Ogun State, Nigeria. </span></a></li>
+                <li class="mb-2"><a class="reset-anchor" href="mailto:church@example.com"> <i class="far fa-envelope text-primary mr-3"></i><span>cuchaplibrary@gmail.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section-->
+    <section class="pb-5">       
+      <div class="container pb-5">
+        <div class="row align-items-center text-center">
+      </div>
+    </section>
+
+    <!-- Scroll TO Top Button-->
+    <a class="scroll-top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+    <footer class="pt-5 text-black-50" style="background: #9d7367">
+      <div class="container pt-5">
+        <div class="row mb-5 pb-5">
+          <div class="col-md-4 col-sm-9"><img class="mb-2" src="{% static 'img/culogo.jpg' %}" alt="..." width="140">
+            <p class="text-lg-center text-black-50"> Covenant University KM. 10 Idiroko Road, Canaan Land, Ota, Ogun State,Nigeria
+
+                                              Telephone:<br>
+
+                                              +234 903 355 0046<br>
+
+                                              +234 903 355 0049<br>
+
+                                              E-mail: vc@covenantuniversity.edu.ng<br>
+
+                                              registrar@covenantuniversity.edu.ng.</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/owl.carousel2/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery-circle-progress/circle-progress.min.js' %}"></script>
+    <script src="{% static 'vendor/smooth-scroll/smooth-scroll.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery.countdown/jquery.countdown.js' %}"></script>
+    <script src="{% static 'js/front.js' %}"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
